@@ -1,0 +1,21 @@
+{
+  "name": "pi-jev-router",
+  "version": "0.1.0",
+  "description": "Route Pi turns through Hermes JEV without exposing router credentials.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "pi": {
+    "extensions": [
+      "extensions/jev-router.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": ">=0.85.1 <0.86.0"
+  },
+  "scripts": {
+    "test:settings": "node tests/validate-settings.mjs settings.example.json"
+  }
+}

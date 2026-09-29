@@ -1,0 +1,28 @@
+{
+  "jevRouting": {
+    "schemaVersion": 1,
+    "enabled": true,
+    "hermes": {
+      "home": "~/.hermes"
+    },
+    "router": {
+      "minConfidence": 0.75,
+      "tiers": {
+        "luna": {
+          "provider": "openai-codex",
+          "hermesModel": "gpt-5.6-luna",
+          "model": "gpt-5.6-luna"
+        },
+        "sol": {
+          "provider": "openai-codex",
+          "hermesModel": "gpt-5.6-terra-900k",
+          "model": "gpt-5.6-terra"
+        }
+      }
+    },
+    "behavior": {
+      "preserveManualModelChoice": true,
+      "routeCommanderPlans": false
+    }
+  }
+}
